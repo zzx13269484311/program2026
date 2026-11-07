@@ -1,0 +1,154 @@
+:root {
+  font-family: "Microsoft YaHei", "Segoe UI", sans-serif;
+  color: #e8f0e5;
+  background: #0c1612;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 82% 8%, rgba(83, 180, 119, 0.22), transparent 32rem),
+    linear-gradient(145deg, #0c1612 0%, #111b16 58%, #07100c 100%);
+}
+
+button {
+  border: 1px solid rgba(143, 216, 169, 0.42);
+  border-radius: 999px;
+  padding: 0.65rem 1.1rem;
+  color: #d8f6e3;
+  background: rgba(61, 123, 84, 0.22);
+  font: inherit;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgba(79, 153, 106, 0.36);
+}
+
+.shell {
+  width: min(1080px, calc(100% - 3rem));
+  margin: 0 auto;
+  padding: 5.5rem 0 4rem;
+}
+
+.eyebrow {
+  margin: 0 0 1rem;
+  color: #8fd8a9;
+  font-size: 0.82rem;
+  letter-spacing: 0.14em;
+}
+
+h1 {
+  margin: 0;
+  font-family: "STSong", "SimSun", serif;
+  font-size: clamp(3.6rem, 10vw, 7.2rem);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  line-height: 0.95;
+}
+
+.subtitle {
+  margin: 1.25rem 0 2.8rem;
+  color: #a6b8ab;
+  font-size: 1.05rem;
+}
+
+.card {
+  padding: 1.5rem;
+  border: 1px solid rgba(143, 216, 169, 0.18);
+  border-radius: 1.4rem;
+  background: rgba(20, 38, 28, 0.72);
+  backdrop-filter: blur(18px);
+}
+
+.status-row {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.status-dot {
+  width: 0.62rem;
+  height: 0.62rem;
+  border-radius: 50%;
+  background: #d8b45e;
+  box-shadow: 0 0 18px currentColor;
+}
+
+.status-dot.ok {
+  color: #64d58d;
+  background: #64d58d;
+}
+
+.status-dot.error {
+  color: #e07b68;
+  background: #e07b68;
+}
+
+.status-text {
+  margin-left: auto;
+  color: #94aa9b;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.detail {
+  margin: 0.9rem 0 1.25rem;
+  color: #a6b8ab;
+  font-family: Consolas, monospace;
+  font-size: 0.82rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.grid article {
+  min-height: 10rem;
+  padding: 1.25rem;
+  border: 1px solid rgba(143, 216, 169, 0.12);
+  border-radius: 1.1rem;
+  background: rgba(15, 29, 22, 0.62);
+}
+
+.grid article span {
+  color: #6baa80;
+  font-family: Consolas, monospace;
+  font-size: 0.75rem;
+}
+
+.grid h2 {
+  margin: 2.2rem 0 0.6rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.grid p {
+  margin: 0;
+  color: #8fa595;
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 700px) {
+  .shell {
+    width: min(100% - 1.5rem, 1080px);
+    padding-top: 3.5rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

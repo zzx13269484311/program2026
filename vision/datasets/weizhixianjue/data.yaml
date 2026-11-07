@@ -1,0 +1,12 @@
+path: D:/program/weizhixianjue/vision/datasets/weizhixianjue
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: person
+  1: lab_coat
+  2: goggles
+  3: obstacle
+  4: smoke
+  5: fire
